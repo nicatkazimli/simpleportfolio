@@ -161,7 +161,6 @@ body, html {
   transform: translateY(-3px);
 }
 
-/* RESPONSIVE */
 @media (max-width: 1200px) {
   .hero-container {
     grid-template-columns: 220px 300px 1fr;
@@ -170,6 +169,7 @@ body, html {
 }
 
 @media (max-width: 900px) {
+  /* Hero container */
   .hero-container {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -194,28 +194,17 @@ body, html {
     max-width: 90%;
     padding: 30px;
   }
-}
-/* CONTACT HİSSƏSİ */
-.contact-info {
-  margin-top: 20px;
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  justify-content: center;
+
+  /* CONTACT HİSSƏSİ mobil override */
+  .contact-info {
+    justify-content: flex-start; /* solda */
+    margin-left: 10px; /* soldan 10px */
+    gap: 8px; /* biraz kiçik gap */
+  }
+
+  .contact-link {
+    font-size: 0.75rem; /* 5px-dən kiçik font */
+    padding: 4px 10px; /* kiçik padding */
+  }
 }
 
-.contact-link {
-  padding: 6px 12px;
-  background: #111827;
-  color: #fff;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 0.85rem;
-  transition: all 0.3s ease;
-}
-
-.contact-link:hover {
-  background: #00e0ff;
-  color: #000;
-  transform: translateY(-2px);
-}
