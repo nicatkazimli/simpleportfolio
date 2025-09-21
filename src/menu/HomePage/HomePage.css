@@ -169,7 +169,6 @@ body, html {
 }
 
 @media (max-width: 900px) {
-  /* Hero container */
   .hero-container {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -182,7 +181,7 @@ body, html {
   }
 
   .about-skills {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
   }
 
@@ -191,20 +190,42 @@ body, html {
   }
 
   .hero-content {
-    max-width: 90%;
-    padding: 30px;
+    max-width: 80%;
+    padding: 25px;
   }
 
-  /* CONTACT HİSSƏSİ mobil override */
   .contact-info {
-    justify-content: flex-start; /* solda */
-    margin-left: 10px; /* soldan 10px */
-    gap: 8px; /* biraz kiçik gap */
+    justify-content: flex-start; 
+    margin-left: 6px; 
+    gap: 6px; 
   }
 
   .contact-link {
-    font-size: 0.75rem; /* 5px-dən kiçik font */
-    padding: 4px 10px; /* kiçik padding */
+    font-size: 0.75rem; 
+    padding: 3px 8px; 
   }
 }
 
+.contact-info {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-link {
+  padding: 6px 12px;
+  background: #111827;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  background: #00e0ff;
+  color: #000;
+  transform: translateY(-2px);
+}
