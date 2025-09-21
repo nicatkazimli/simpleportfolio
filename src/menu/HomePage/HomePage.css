@@ -169,42 +169,67 @@ body, html {
 }
 
 @media (max-width: 900px) {
+  /* Hero container: alt-alta düşür */
   .hero-container {
     grid-template-columns: 1fr;
     gap: 20px;
     text-align: center;
   }
 
+  /* Sol image */
   .about-image img {
-    width: 70%;
-    margin: 0 auto;
+    width: 60%; /* kiçildildi */
+    margin: 0 auto 15px;
   }
 
+  /* Skills */
   .about-skills {
-    width: 80%;
+    width: 90%; /* biraz daraldıldı */
     margin: 0 auto;
   }
 
+  /* Sağ content (hero-right) */
   .hero-right {
     order: 3;
   }
 
+  /* Başlıq və mətni kiçildək */
   .hero-content {
-    max-width: 70%;
-    padding: 35px;
+    max-width: 80%; /* əvvəlki 70% → 80% daha uyğun ola bilər */
+    padding: 20px;
+    font-size: 0.9rem; /* text bir az kiçildildi */
   }
 
+  /* Contact info solda */
   .contact-info {
     justify-content: flex-start; 
-    margin-left: 4px; 
-    gap: 4px; 
+    margin-left: 10px; /* solda 10px */
+    gap: 5px; /* azaldıldı */
+    flex-wrap: wrap;
   }
 
   .contact-link {
-    font-size: 0.70rem; 
-    padding: 5px 9px; 
+    font-size: 0.75rem; /* font kiçildildi */
+    padding: 4px 10px; /* kiçik padding */
+  }
+
+  /* Background image mobil üçün */
+  .hero {
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* List item (skills) kiçildildi */
+  .skills-list li {
+    font-size: 0.75rem; /* kiçik font */
+    padding: 6px;
+  }
+
+  .skills-list {
+    gap: 6px; /* listlər arası boşluq azaldıldı */
   }
 }
+
 
 .contact-info {
   margin-top: 20px;
