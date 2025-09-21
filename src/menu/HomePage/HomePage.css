@@ -170,31 +170,74 @@ body, html {
 }
 
 @media (max-width: 900px) {
+  /* Hero container mobil */
   .hero-container {
     grid-template-columns: 1fr;
     gap: 20px;
     text-align: center;
   }
 
+  /* Sol image */
   .about-image img {
     width: 70%;
     margin: 0 auto;
   }
 
+  /* Skills container */
   .about-skills {
     width: 90%;
     margin: 0 auto;
+    text-align: left; /* sola çəkildi */
   }
 
+  /* Skills list fontunu kiçilt */
+  .skills-list li {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+  }
+
+  /* Hero right content */
   .hero-right {
     order: 3;
   }
 
   .hero-content {
     max-width: 90%;
-    padding: 30px;
+    padding: 20px;
+    font-size: 0.85rem; /* bütün text bir az kiçildi */
+  }
+
+  /* Başlıqları (h1, h2) mobil üçün kiçilt */
+  .hero-content h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+
+  /* Hero arxa fon image-i mobil üçün kiçilt */
+  .hero-right::before {
+    background-size: contain;
+    background-position: center;
+  }
+
+  /* Contact info mobil */
+  .contact-info {
+    justify-content: flex-start; /* sola çəkildi */
+    margin-left: 15px; /* solda 15px */
+    gap: 5px; /* list arası boşluq azaldıldı */
+    flex-wrap: wrap;
+  }
+
+  .contact-link {
+    font-size: 0.75rem; /* kiçik font */
+    padding: 4px 10px;
   }
 }
+
 /* CONTACT HİSSƏSİ */
 .contact-info {
   margin-top: 20px;
