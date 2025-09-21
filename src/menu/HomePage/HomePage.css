@@ -40,6 +40,11 @@ body, html {
   padding: 20px;
   align-items: start;
 }
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-15px); } /* yuxarı qalxır */
+  100% { transform: translateY(0px); }
+}
 
 /* 1. SÜTUN — IMAGE */
 .about-image img {
@@ -47,6 +52,7 @@ body, html {
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: float 3s ease-in-out infinite;
 }
 
 .about-image img:hover {
@@ -177,6 +183,7 @@ body, html {
     text-align: center;
   }
 
+  
   /* Sol image */
   .about-image img {
     width: 70%;
