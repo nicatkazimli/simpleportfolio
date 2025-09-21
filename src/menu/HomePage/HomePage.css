@@ -190,19 +190,19 @@ body, html {
   }
 
   .hero-content {
-    max-width: 80%;
-    padding: 25px;
+    max-width: 70%;
+    padding: 35px;
   }
 
   .contact-info {
     justify-content: flex-start; 
-    margin-left: 6px; 
-    gap: 6px; 
+    margin-left: 4px; 
+    gap: 4px; 
   }
 
   .contact-link {
-    font-size: 0.75rem; 
-    padding: 3px 8px; 
+    font-size: 0.70rem; 
+    padding: 5px 9px; 
   }
 }
 
