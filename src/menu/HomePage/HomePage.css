@@ -175,6 +175,35 @@ body, html {
     gap: 20px;
     text-align: center;
   }
+  
+
+  .hero-content h1 {
+    font-size: 32px; /* əvvəlki böyükdü → mobil üçün uyğun ölçü */
+    line-height: 1.2;
+    word-break: break-word; /* uzun sözləri sığdırır */
+  }
+
+  .hero-content h2 {
+    font-size: 18px; /* uyğunlaşdırıldı */
+  }
+
+  /* Hero background image sağ hissəsi görünməsi üçün */
+  .hero::after {
+    top: 150px; /* vertical mövqeyini dəyiş */
+    left: 50%;   /* sağa yaxın göstərmək üçün */
+    transform: translateX(-50%); /* ortalayır */
+    width: 90%; /* mobil üçün genişliyi artır */
+    height: auto; /* proporsional qalır */
+    background-size: contain; /* tam görünməsi üçün */
+  }
+
+  /* Hero content ümumi width */
+  .hero-content {
+    max-width: 90%;
+    padding: 15px;
+  }
+    
+  }
 
   /* Sol image */
   .about-image img {
@@ -228,7 +257,7 @@ body, html {
   .skills-list {
     gap: 6px; /* listlər arası boşluq azaldıldı */
   }
-}
+
 
 
 .contact-info {
