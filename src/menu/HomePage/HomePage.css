@@ -183,11 +183,18 @@ body, html {
     text-align: center;
   }
 
+  @keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-15px); } /* yuxarı qalxır */
+  100% { transform: translateY(0px); }
+}
+
   
   /* Sol image */
   .about-image img {
     width: 70%;
     margin: 0 auto;
+    animation: float 3s ease-in-out infinite;
   }
 
   /* Skills container */
