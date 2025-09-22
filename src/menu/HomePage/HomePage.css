@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Poppins:wght@400;600;700&display=swap');
 
-/* BODY & HERO */
 body, html {
   margin: 0;
   padding: 0;
@@ -28,11 +27,10 @@ body, html {
   z-index: 1;
 }
 
-/* HERO İÇİ KONTEYNER — ÜÇ SÜTUN */
 .hero-container {
   position: relative;
   display: grid;
-  grid-template-columns: 250px 350px 1fr; /* 1: image, 2: skills, 3: hero content */
+  grid-template-columns: 250px 350px 1fr; 
   gap: 40px;
   width: 100%;
   max-width: 1400px;
@@ -46,7 +44,6 @@ body, html {
   100% { transform: translateY(0px); }
 }
 
-/* 1. SÜTUN — IMAGE */
 .about-image img {
   width: 100%;
   border-radius: 16px;
@@ -60,9 +57,53 @@ body, html {
   box-shadow: 0 12px 25px rgba(0,224,255,0.5);
 }
 
-/* 2. SÜTUN — SKILLS */
 .about-skills h2 {
   font-size: 1.6rem;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #111827;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(0,224,255,0.3);
+}
+.summary{
+   font-size: 1.2rem;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #111827;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(0,224,255,0.3);
+}
+.summary4{
+   font-size: 1.2rem;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #111827;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(0,224,255,0.3);
+}
+.summary3{
+   font-size: 1.2rem;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #111827;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(0,224,255,0.3);
+}
+.summary2{
+   font-size: 1.2rem;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #111827;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(0,224,255,0.3);
+}
+.summary1{
+   font-size: 1.2rem;
   margin-bottom: 15px;
   padding: 10px;
   border-radius: 10px;
@@ -80,16 +121,54 @@ body, html {
   gap: 12px;
 }
 
-.skills-list li {
-  background: #111827;
+.accord{
+background: #111827;
   padding: 12px;
-  border-radius: 10px;
   transition: all 0.3s ease;
+}
+.accord1{
+background: #111827;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+.accord2{
+background: #111827;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+.accord3{
+background: #111827;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+.accord4{
+background: #111827;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+.summary4:hover{
+   background: #00e0ff;
+  box-shadow: 0 6px 16px rgba(0,224,255,0.3);
+}
+.summary3:hover{
+   background: #00e0ff;
+  box-shadow: 0 6px 16px rgba(0,224,255,0.3);
+}
+.summary2:hover{
+   background: #00e0ff;
+  box-shadow: 0 6px 16px rgba(0,224,255,0.3);
+}
+.summary1:hover{
+   background: #00e0ff;
+  box-shadow: 0 6px 16px rgba(0,224,255,0.3);
+}
+.summary:hover{
+   background: #00e0ff;
+  box-shadow: 0 6px 16px rgba(0,224,255,0.3);
 }
 
 .skills-list li:hover {
   background: #00e0ff;
-  transform: translateY(-4px);
   box-shadow: 0 6px 16px rgba(0,224,255,0.3);
 }
 
@@ -102,11 +181,10 @@ body, html {
 .skills-list p {
   font-size: 0.85rem;
   margin: 0;
-  color: #e6faff;
+  color: #e7eef0;
   line-height: 1.4;
 }
 
-/* 3. SÜTUN — HERO CONTENT Geniş Sahə */
 .hero-right {
   position: relative;
   width: 100%;
@@ -167,7 +245,6 @@ body, html {
   transform: translateY(-3px);
 }
 
-/* RESPONSIVE */
 @media (max-width: 1200px) {
   .hero-container {
     grid-template-columns: 220px 300px 1fr;
@@ -176,7 +253,6 @@ body, html {
 }
 
 @media (max-width: 900px) {
-  /* Hero container mobil */
   .hero-container {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -185,32 +261,28 @@ body, html {
 
   @keyframes float {
   0%   { transform: translateY(0px); }
-  50%  { transform: translateY(-15px); } /* yuxarı qalxır */
+  50%  { transform: translateY(-15px); }
   100% { transform: translateY(0px); }
 }
 
   
-  /* Sol image */
   .about-image img {
     width: 70%;
     margin: 0 auto;
     animation: float 3s ease-in-out infinite;
   }
 
-  /* Skills container */
   .about-skills {
     width: 90%;
     margin: 0 auto;
-    text-align: left; /* sola çəkildi */
+    text-align: left; 
   }
 
-  /* Skills list fontunu kiçilt */
   .skills-list li {
     font-size: 0.75rem;
     padding: 6px 10px;
   }
 
-  /* Hero right content */
   .hero-right {
     order: 3;
   }
@@ -218,10 +290,9 @@ body, html {
   .hero-content {
     max-width: 90%;
     padding: 20px;
-    font-size: 0.85rem; /* bütün text bir az kiçildi */
+    font-size: 0.85rem; 
   }
 
-  /* Başlıqları (h1, h2) mobil üçün kiçilt */
   .hero-content h1 {
     font-size: 2rem;
     font-weight: 600;
@@ -232,27 +303,25 @@ body, html {
     font-size: 1.2rem;
   }
 
-  /* Hero arxa fon image-i mobil üçün kiçilt */
   .hero-right::before {
     background-size: contain;
     background-position: center;
   }
 
-  /* Contact info mobil */
   .contact-info {
-    justify-content: flex-start; /* sola çəkildi */
-    margin-left: 15px; /* solda 15px */
-    gap: 5px; /* list arası boşluq azaldıldı */
+    justify-content: flex-start; 
+    margin-left: 15px; 
+    gap: 5px; 
     flex-wrap: wrap;
   }
 
   .contact-link {
-    font-size: 0.75rem; /* kiçik font */
+    font-size: 0.75rem; 
     padding: 4px 10px;
   }
 }
 
-/* CONTACT HİSSƏSİ */
+
 .contact-info {
   margin-top: 20px;
   display: flex;
